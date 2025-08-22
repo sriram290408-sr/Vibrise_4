@@ -8,31 +8,21 @@
 </head>
 <body>
   <div class="login-container">
-    <h2>Login</h2>
-    <form id="login-form">
-      <input type="email" id="email" placeholder="Email" required>
-      <input type="password" id="password" placeholder="Password" required>
+    <h1>Login</h1>
+    <form>
+      <div class="input-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Enter your email" required>
+      </div>
+
+      <div class="input-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="Enter your password" required>
+      </div>
+
       <button type="submit">Login</button>
+      <p class="signup-text">Don't have an account? <a href="#">Sign up</a></p>
     </form>
-    <p id="login-message"></p>
   </div>
-
-  <script>
-    document.getElementById("login-form").addEventListener("submit", async function(e) {
-      e.preventDefault();
-      const email = document.getElementById("email").value;
-      const password = document.getElementById("password").value;
-
-      const response = await fetch("/login", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ email, password })
-      });
-
-      const result = await response.json();
-      document.getElementById("login-message").textContent = result.message;
-      document.getElementById("login-message").style.color = result.success ? "green" : "red";
-    });
-  </script>
 </body>
 </html>
