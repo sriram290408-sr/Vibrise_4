@@ -4,7 +4,9 @@
   box-sizing: border-box;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-
+.hero-text .btn {
+  margin-right: 10px;
+}
 body {
   background: #0d1b2a;
   color: #fff;
@@ -188,3 +190,4 @@ footer {
   padding: 15px;
   margin-top: 20px;
 }
+
