@@ -41,6 +41,29 @@ nav a:hover,
 nav a.active {
   color: #00aaff;
 }
+.contact-section {
+  text-align: center;
+  padding: 40px;
+  background: #f7f9fc;
+}
+
+.contact-info {
+  margin: 20px 0;
+  font-size: 18px;
+}
+
+.contact-info p {
+  margin: 10px 0;
+}
+
+.contact-info a {
+  color: #0077b6;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
 
 .contact-section {
   max-width: 600px;
@@ -101,3 +124,4 @@ footer {
   margin-top: 40px;
   color: #fff;
 }
+
