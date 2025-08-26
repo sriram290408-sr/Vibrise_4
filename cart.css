@@ -6,6 +6,19 @@ body {
   text-align: center;
 }
 
+nav a {
+  color: #fff;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav a:hover,
+nav a.active {
+  color: #00aaff;
+}
+
 header {
   background: #0d1b2a;
   color: white;
@@ -84,3 +97,4 @@ button {
 button:hover {
   background: #0077b6;
 }
+
