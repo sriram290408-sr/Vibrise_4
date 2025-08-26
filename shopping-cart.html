@@ -14,36 +14,12 @@
   <main>
     <h2>Select Your Product</h2>
     <div class="products">
-      <div class="product" onclick="selectProduct('module')">
-        <img src="module.jpg" alt="Module">
-        <p>Module</p>
-        <span>₹299</span>
-        <div class="tick" id="tick-module">✔</div>
-      </div>
-      
-      <div class="product" onclick="selectProduct('small')">
-        <img src="small-pillow.png" alt="Small Pillow">
-        <p>Small Pillow</p>
-        <span>₹399</span>
-        <div class="tick" id="tick-small">✔</div>
-      </div>
-           <br/>
-      <div class="product" onclick="selectProduct('big')">
-        <img src="big-pillow.png" alt="Big Pillow">
-        <p>Big Pillow</p>
-        <span>₹449</span>
-        <div class="tick" id="tick-big">✔</div>
-      </div>
-
-      <div class="product" onclick="selectProduct('combo')">
-        <img src="combo-offer.jpg" alt="Combo Pillow">
-        <p>Combo (Small + Big)</p>
-        <span>₹799</span>
-        <div class="tick" id="tick-combo">✔</div>
-      </div>
-    </div>
-
-    <div class="order-summary">
+     <div onclick="selectProduct('small')">Small Pillow <span id="tick-small" style="display:none">✔</span></div>
+<div onclick="selectProduct('big')">Big Pillow <span id="tick-big" style="display:none">✔</span></div>
+<div onclick="selectProduct('combo')">Combo (Small + Big) <span id="tick-combo" style="display:none">✔</span></div>
+<div onclick="selectProduct('module')">Special Module <span id="tick-module" style="display:none">✔</span></div>
+    </div>  
+    <div class="order-summary" style="margin-top:20px; font-weight:bold;">
       <h3>Order Summary</h3>
       <p id="selected-item">Selected: None</p>
       <p id="total-price">Total: ₹0</p>
