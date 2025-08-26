@@ -6,6 +6,29 @@ body {
   text-align: center;
 }
 
+header {
+  background: #0d1b2a;
+  color: white;
+  padding: 20px;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background: #1b263b;
+}
+
+header .logo {
+  display: flex;
+  align-items: center;
+}
+
+header .logo img {
+  width: 50px;
+  margin-right: 10px;
+}
+
 nav a {
   color: #fff;
   margin: 0 15px;
@@ -19,11 +42,6 @@ nav a.active {
   color: #00aaff;
 }
 
-header {
-  background: #0d1b2a;
-  color: white;
-  padding: 20px;
-}
 
 .products {
   display: flex;
@@ -97,4 +115,5 @@ button {
 button:hover {
   background: #0077b6;
 }
+
 
