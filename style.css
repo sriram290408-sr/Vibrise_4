@@ -183,14 +183,6 @@ form button {
 button a {
   text-decoration: none;
 }
-@media (max-width: 768px) {
-  nav ul {
-    display: flex;
-    flex-direction: column;   
-    align-items: flex-start;  
-    gap: 10px;               
-  }
-}
 
 footer {
   background: #0d1b2a;
@@ -198,5 +190,6 @@ footer {
   padding: 15px;
   margin-top: 20px;
 }
+
 
 
